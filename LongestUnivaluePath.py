@@ -44,3 +44,34 @@ class Solution:
         res = max(left + right, res)
         return max(left, right), res
 
+
+if __name__ == "__main__":
+    tree_list = [1,4,5,4,4,5]
+    parent_list = []
+    tree = []
+    new = TreeNode(tree_list[0])
+    del tree_list[0]
+    parent_list.append(new)
+    while parent_list:
+        new = parent_list[0]
+        if not new.left:
+            if tree_list:
+                left_son = TreeNode(tree_list[0])
+                new.left = left_son
+                del tree_list[0]
+                parent_list.append(left_son)
+            else:
+                pass
+        if not new.right:
+            if tree_list:
+                right_son = TreeNode(tree_list[0])
+                new.right = right_son
+                del tree_list[0]
+                parent_list.append(right_son)
+            else:
+                pass
+        tree.append(new)
+        del parent_list[0]
+    s = Solution()
+    res = s.longestUnivaluePath(tree[0])
+    print(res)
