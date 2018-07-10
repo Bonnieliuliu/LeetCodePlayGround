@@ -80,3 +80,5 @@ if __name__ == "__main__":
             del stack[0]
         return
     PrintTree(res)
+    res = [[None] * 2] * 5
+    print(res)
