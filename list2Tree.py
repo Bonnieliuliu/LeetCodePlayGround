@@ -36,6 +36,5 @@ def list2tree(tree_list):
             else:
                 pass
         tree.append(new)
-        print(new.val)
         del parent_list[0]
     return tree
