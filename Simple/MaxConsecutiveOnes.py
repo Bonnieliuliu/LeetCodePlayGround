@@ -7,7 +7,7 @@ time = 2018/8/2 20:27
 more information
 """
 
-
+import json
 class Solution:
     def findMaxConsecutiveOnes(self, nums):
         """
@@ -42,9 +42,7 @@ def main():
         try:
             line = next(lines)
             nums = stringToIntegerList(line);
-
             ret = Solution().findMaxConsecutiveOnes(nums)
-
             out = str(ret);
             print(out)
         except StopIteration:
