@@ -1,12 +1,3 @@
-# -*- coding:utf-8 -*-
-"""
-author:Bonnieliuliu
-email:fangyuanliu@pku.edu.cn
-
-file: Walking Robot Simulation.py
-time: 2018/8/22 1:55
-"""
-
 typedef pair<int, int> ii;
 const int d[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 class Solution {
