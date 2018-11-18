@@ -14,7 +14,6 @@ class Solution(object):
         region = []
         for ele in op:
             if ele[0] == "T":
-
                 region.append([ele[1], ele[2]])
             if ele[0] == "Q":
                 id = ele[1]
